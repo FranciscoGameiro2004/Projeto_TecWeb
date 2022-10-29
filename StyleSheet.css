@@ -4,6 +4,30 @@
     margin: 0px auto;
     width: 100%;
     text-align: center;
-    background-color: rgb(255, 0, 0);
-    border: 5px solid rgb(217, 255, 0);
+    background-color: rgb(14, 255, 235);
+    border: 5px solid rgb(0, 0, 0);
 }
+body {
+    background-color: rgba(36, 36, 35, 0.664);
+}
+.topnav {
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(189, 179, 179);
+}
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
