@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Criar conta</h1>
+    <form action="https://www.webucator.com/materials/htm101/" method="post">
+        <fieldset>
+            Nome e apelido <br>
+            <input type="text" pattern="[A-Z][a-z]+\s[A-Z][a-z]+" name="nome" id="nome" required> <br>
+            Email <br>
+            <input type="email" name="email" id="email" required> <br>
+            Data de nascimento <br>
+            <input type="date" name="dataNascimento" id="dataNascimento" required> <br>
+            Password: <br>
+            <input type="password" name="password" id="password" required> <br>
+            Confirme a sua password: <br>
+            <input type="password" name="confirmarPassword" id="confirmarPassword" required> <br>
+            <br>
+            <input type="checkbox" name="termos" id="termos" required>
+            <label  for="termos">
+                Li e aceito os <a href="https://www.worten.pt/termos-e-condicoes-da-conta-online">Termos e Condições</a> e confirmo que tenho mais de 16 anos de idade.
+            </label>
+            <br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label  for="newsletter">
+                Quero subscrever a newsletter para obter informações sobre as promoções da Bizarra
+            </label> <br>
+            <input type="submit" name="submeter" id="submeter" value="Criar Conta">
+        </fieldset>
+    </form>
+    <p>Já tem conta? <a href="login.html">Então inicie a sua sessão!</a></p>
+</body>
+</html>
