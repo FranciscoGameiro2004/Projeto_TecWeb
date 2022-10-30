@@ -5,18 +5,20 @@
     width: 100%;
     text-align: center;
     background-color: rgb(14, 255, 235);
-    border: 5px solid rgb(0, 0, 0);
 }
 body {
     background-color: rgba(36, 36, 35, 0.664);
 }
 .topnav {
-    display: flex;
     overflow: hidden;
     background-color: rgb(189, 179, 179);
+    text-align: center;
+}
+.topnav li {
+    display: inline;
 }
 .topnav a {
-    float: left;
+    display: inline-block;
     color: #000000;
     text-align: center;
     padding: 14px 16px;
@@ -30,4 +32,3 @@ body {
     background-color: #ddd;
     color: black;
 }
-  
