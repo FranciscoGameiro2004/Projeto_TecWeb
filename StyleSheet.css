@@ -14,9 +14,6 @@ body {
     background-color: rgb(189, 179, 179);
     text-align: center;
 }
-#topnav ul {
-    top: 0;
-}
 #topnav li {
     display: inline;
 }
