@@ -4,20 +4,20 @@
     margin: 0px auto;
     width: 100%;
     text-align: center;
-    background-color: rgb(14, 255, 235);
+    background-color: rgb(255, 255, 255);
 }
 body {
-    background-color: rgba(36, 36, 35, 0.664);
+    background-color: rgba(99, 99, 96, 0.664);
 }
-.topnav {
+#topnav {
     overflow: hidden;
     background-color: rgb(189, 179, 179);
     text-align: center;
 }
-.topnav li {
+#topnav li {
     display: inline;
 }
-.topnav a {
+#topnav a {
     display: inline-block;
     color: #000000;
     text-align: center;
@@ -27,8 +27,13 @@ body {
     color: rgb(255, 255, 255);
     margin: auto;
 }
-  
-.topnav a:hover {
+#topnav a:hover {
     background-color: #ddd;
     color: black;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
