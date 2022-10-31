@@ -4,10 +4,10 @@
     margin: 0px auto;
     width: 100%;
     text-align: center;
-    background-color: rgb(14, 255, 235);
+    background-color: rgb(255, 255, 255);
 }
 body {
-    background-color: rgba(36, 36, 35, 0.664);
+    background-color: rgba(99, 99, 96, 0.664);
 }
 .topnav {
     overflow: hidden;
