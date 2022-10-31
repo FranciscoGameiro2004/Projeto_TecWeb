@@ -11,7 +11,7 @@
         <div class="customHeader">
             teste
         </div>
-        <div class="topnav">
+        <div id="topnav">
             <ul>
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
@@ -31,5 +31,26 @@
             Phasellus quis orci dignissim, faucibus sapien in, tempus arcu. Maecenas condimentum sagittis tellus, id malesuada mi faucibus ultricies. Pellentesque venenatis neque ut nisi luctus, in cursus ipsum venenatis. Sed volutpat, ante quis tempor cursus, purus nunc lobortis magna, ac vulputate enim ligula quis sapien. Proin in quam at erat auctor molestie. Praesent cursus neque ante, quis tempus quam efficitur sed. Cras sit amet enim diam. Suspendisse at ligula vitae est ultricies ultricies. Duis et iaculis diam, eu mollis leo. Etiam vitae aliquam turpis. Aliquam tincidunt augue at lacus sollicitudin, vel pulvinar leo hendrerit. In nulla arcu, rhoncus convallis sem a, varius semper massa. Fusce nec erat sed urna vehicula interdum nec eu elit. Vestibulum id arcu non orci finibus tempor. Phasellus ac odio sed nulla blandit ullamcorper.
             
             Maecenas quis nisi in risus bibendum auctor sit amet quis sem. Nulla eget enim vitae leo egestas volutpat. In euismod dolor orci, vitae auctor lorem dignissim quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dictum, sapien id viverra molestie, arcu est tempor enim, vel hendrerit ex nulla sit amet quam. Mauris ac sapien volutpat, rutrum sapien at, tempor nisl. Suspendisse blandit laoreet vulputate. Pellentesque non augue eget velit venenatis rutrum vel et felis. Nullam vitae nunc sagittis, fringilla diam at, lacinia ligula. Curabitur et mauris turpis. Maecenas vitae magna eu dui aliquet mattis in vel augue. Duis consectetur lacus velit, vel facilisis sapien condimentum a. Nunc at posuere nisi, a iaculis nisl. Donec tortor urna, rhoncus quis pretium a, pulvinar eget magna. Donec imperdiet augue turpis, eu euismod dolor sodales vel.</h1>
-    </body>
+    
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var topnav = document.getElementById("topnav");
+                var sticky = topnav.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) 
+                  {
+                    topnav.classList.add("sticky")
+                  }
+                  else 
+                  {
+                    topnav.classList.remove("sticky");
+                  }
+                }
+                </script>
+    
+    
+    
+        </body>
 </html>

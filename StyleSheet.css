@@ -9,15 +9,18 @@
 body {
     background-color: rgba(99, 99, 96, 0.664);
 }
-.topnav {
+#topnav {
     overflow: hidden;
     background-color: rgb(189, 179, 179);
     text-align: center;
 }
-.topnav li {
+#topnav ul {
+    top: 0;
+}
+#topnav li {
     display: inline;
 }
-.topnav a {
+#topnav a {
     display: inline-block;
     color: #000000;
     text-align: center;
@@ -27,8 +30,13 @@ body {
     color: rgb(255, 255, 255);
     margin: auto;
 }
-  
-.topnav a:hover {
+#topnav a:hover {
     background-color: #ddd;
     color: black;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
