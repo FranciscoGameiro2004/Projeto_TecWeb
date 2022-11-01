@@ -1,0 +1,11 @@
+.customHeader {
+    display: inline-block;
+    padding: 20px 0;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+body {
+    background-color: rgba(99, 99, 96, 0.664);
+}
