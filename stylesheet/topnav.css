@@ -4,15 +4,14 @@
     text-align: center;
 }
 #topnav li {
-    display: inline;
+    display: inline
 }
 #topnav a {
     display: inline-block;
-    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     margin: auto;
 }
@@ -21,12 +20,12 @@
     color: white;
 }
 #topnav a:hover {
-    background-color: #ddd;
+    background-color: white;
     color: black;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    margin: 0 auto;
   }
-  
