@@ -1,0 +1,4 @@
+colocar um <main>,<aside> e <fotter> no trabalh0
+
+criar uma sessão do site com duas sub divisões para barra de navegação vertical e produtos a direita
+

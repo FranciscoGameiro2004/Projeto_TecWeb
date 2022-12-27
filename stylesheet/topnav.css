@@ -1,29 +1,17 @@
-.customHeader {
-    display: inline-block;
-    padding: 20px 0;
-    margin: 0px auto;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-body {
-    background-color: rgba(99, 99, 96, 0.664);
-}
 #topnav {
     overflow: hidden;
     background-color: rgb(189, 179, 179);
     text-align: center;
 }
 #topnav li {
-    display: inline;
+    display: inline
 }
 #topnav a {
     display: inline-block;
-    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     margin: auto;
 }
@@ -32,12 +20,12 @@ body {
     color: white;
 }
 #topnav a:hover {
-    background-color: #ddd;
+    background-color: white;
     color: black;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    margin: 0 auto;
   }
-  

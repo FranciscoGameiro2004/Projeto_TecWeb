@@ -1,0 +1,83 @@
+body {
+    background-color: rgba(90, 90, 71, 0.274);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10;
+}
+.customHeader {
+    display: inline-block;
+    padding: 20px 0;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+#structure {
+    display: flex;
+    flex-direction: row;
+}
+#leftSide {
+    background-color: rgba(252, 0, 0, 0.274);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 10;
+    
+}
+#centerSide {
+    background-color: rgba(55, 0, 255, 0.274);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#produtosTituloPrincipal {
+    display: flex;
+    justify-content: center;
+}
+#produtoLista {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    border-radius: 10px;
+    margin: 10px;
+}
+#produto {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 30px 10px 30px;
+    margin: 10px;
+}
+#produtoTitulo {
+    display: flex;
+    justify-content: center;
+}
+#produtoFoto {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#produtoDescriçao {
+    display: flex;
+    justify-content: center;
+}
+#rightSide {
+    background-color: rgba(63, 63, 0, 0.274);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 10;
+}
+#endSite {
+    background-color: rgba(57, 156, 53, 0.274);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10;
+}
