@@ -22,8 +22,10 @@ body {
     background-color: rgba(252, 0, 0, 0.274);
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 20%;
     margin: 10;
+    
 }
 #centerSide {
     background-color: rgba(55, 0, 255, 0.274);
@@ -40,7 +42,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-around;
     border-radius: 10px;
     margin: 10px;
 }
@@ -48,10 +50,19 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 10px 30px 10px 30px;
     margin: 10px;
 }
 #produtoTitulo {
+    display: flex;
+    justify-content: center;
+}
+#produtoFoto {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#produtoDescriçao {
     display: flex;
     justify-content: center;
 }
@@ -59,10 +70,10 @@ body {
     background-color: rgba(63, 63, 0, 0.274);
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 20%;
     margin: 10;
 }
-
 #endSite {
     background-color: rgba(57, 156, 53, 0.274);
     display: flex;
