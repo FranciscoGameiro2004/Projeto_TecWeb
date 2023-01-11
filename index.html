@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="customHeader">
-                teste
+                <p>teste</p> 
             </div>
             <nav id="topnav">
                 <ul>
@@ -29,23 +29,25 @@
 
             <section id="leftSide">
                 <h1>leftSide</h1>
+                <div>
+                    <input type="search" id="textoSearch" name="search">
+                    <button type="button" id="btnSearch" onclick="test()">Filtrar</button>
+                </div>
+
             </section>
 
             <div  id="centerSide">
-
-
                 <section>
 
                     <div id="produtosTituloPrincipal">
-                        <h1>PRODUTOS CENTER</h1>
-                        <input type="search" id="search" name="search">
+                        <h1 id="change">PRODUTOS CENTER</h1>
                     </div>
     
                     <div id="produtoLista">
 
                         <div id="produto">
                             <div id="produtoTitulo">
-                                <h1>Produto 1</h1>
+                                <h1>carro</h1>
                             </div>
                             <img src="https://via.placeholder.com/250" id="produtoFoto" alt="foto temporaria">
                             <div id="produtoDescriçao">
@@ -67,7 +69,7 @@
         <footer id="endSite">
             <h1>footer</h1>
         </footer>
-
+        <script src="/JavaScript/filtro.js"></script>
     </body>
     
 </html>
