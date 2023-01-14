@@ -7,6 +7,7 @@
         <title>Tec Web</title>
         <link href="/stylesheet/StyleSheet.css" rel="stylesheet">
         <link href="/stylesheet/topnav.css" rel="stylesheet">
+
     </head>
 
     <body>
@@ -41,20 +42,32 @@
 
                     <div id="produtosTituloPrincipal">
                         <p>Filtro</p>
-                        <div class="botoesFiltragem">
-                            <button>1</button>
-                            <button>2</button>
-                            <button>3</button>
-                            <button>4</button>
-                            <button>5</button>
+                        <div id="botoesFiltragem">
+
+                            <button id="btn1" class="btn active">todas</button>
+                            <button id="btn2" class="btn">colher</button>
+                            <button id="btn3" class="btn">faca</button>
+                            <button id="btn4" class="btn">frutas</button>
+                            <button id="btn5" class="btn">cores</button>
+
                         </div>
                     </div>
     
                     <div id="produtoLista">
 
-                        <div id="produto" class="cozinha">
+                        <div class="produto colher">
                             <div id="produtoTitulo">
-                                <h1>carro</h1>
+                                <h1>colher</h1>
+                            </div>
+                            <img src="https://via.placeholder.com/250" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto faca">
+                            <div id="produtoTitulo">
+                                <h1>faca</h1>
                             </div>
                             <img src="https://via.placeholder.com/250" id="produtoFoto" alt="foto temporaria">
                             <div id="produtoDescriçao">
@@ -63,6 +76,7 @@
                         </div>
 
                     </div>
+
                 </section>
             </div>
 

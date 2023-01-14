@@ -43,7 +43,7 @@ body {
 #produtosTituloPrincipal > p {
     margin-right: 2%;
 }
-.botoesFiltragem {
+#botoesFiltragem {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -60,13 +60,17 @@ body {
     margin: 10px;
 }
 /*AQUI*/
-#produto {
-    display: flex; /* Hidden by default none*/
+.produto {
+    display: none; /* Hidden by default none*/
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     border-radius: 10px 30px 10px 30px;
     margin: 10px;
 }
+.show {
+    display: flex;
+}
+
 #produtoTitulo {
     display: flex;
     justify-content: center;
