@@ -59,10 +59,11 @@ body {
     border-radius: 10px;
     margin: 10px;
 }
+/*AQUI*/
 #produto {
-    background-color: rgb(255, 255, 255);
-    display: flex;
+    display: flex; /* Hidden by default */
     flex-direction: column;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px 30px 10px 30px;
     margin: 10px;
 }
