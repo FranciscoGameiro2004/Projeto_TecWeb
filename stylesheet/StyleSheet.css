@@ -38,6 +38,17 @@ body {
 #produtosTituloPrincipal {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#produtosTituloPrincipal > p {
+    margin-right: 2%;
+}
+.botoesFiltragem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
 }
 #produtoLista {
     background-color: aquamarine;
