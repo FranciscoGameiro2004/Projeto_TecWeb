@@ -7,12 +7,13 @@
         <title>Tec Web</title>
         <link href="/stylesheet/StyleSheet.css" rel="stylesheet">
         <link href="/stylesheet/topnav.css" rel="stylesheet">
+
     </head>
 
     <body>
         <header>
             <div class="customHeader">
-                teste
+                <p>teste</p> 
             </div>
             <nav id="topnav">
                 <ul>
@@ -29,23 +30,44 @@
 
             <section id="leftSide">
                 <h1>leftSide</h1>
+                <div>
+                    <input type="search" id="textoSearch" name="search">
+                    <button type="button" id="btnSearch" onclick="test()">Filtrar</button>
+                </div>
+
             </section>
 
             <div  id="centerSide">
-
-
                 <section>
 
                     <div id="produtosTituloPrincipal">
-                        <h1>PRODUTOS CENTER</h1>
-                        <input type="search" id="search" name="search">
+                        <p>Filtro</p>
+                        <div id="botoesFiltragem">
+
+                            <button id="btn1" class="btn active">todas</button>
+                            <button id="btn2" class="btn">colher</button>
+                            <button id="btn3" class="btn">faca</button>
+                            <button id="btn4" class="btn">frutas</button>
+                            <button id="btn5" class="btn">cores</button>
+
+                        </div>
                     </div>
     
                     <div id="produtoLista">
 
-                        <div id="produto">
+                        <div class="produto colher">
                             <div id="produtoTitulo">
-                                <h1>Produto 1</h1>
+                                <h1>colher</h1>
+                            </div>
+                            <img src="https://via.placeholder.com/250" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto faca">
+                            <div id="produtoTitulo">
+                                <h1>faca</h1>
                             </div>
                             <img src="https://via.placeholder.com/250" id="produtoFoto" alt="foto temporaria">
                             <div id="produtoDescriçao">
@@ -54,6 +76,7 @@
                         </div>
 
                     </div>
+
                 </section>
             </div>
 
@@ -67,7 +90,7 @@
         <footer id="endSite">
             <h1>footer</h1>
         </footer>
-
+        <script src="/JavaScript/filtro.js"></script>
     </body>
     
 </html>
