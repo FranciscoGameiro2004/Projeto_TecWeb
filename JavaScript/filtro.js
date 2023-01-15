@@ -69,7 +69,7 @@ for (var i = 0; i < btns.length; i++)
 }
 
 btn1.addEventListener("click", function() {filterSelection("all")})
-btn2.addEventListener("click", function() {filterSelection('colher')})
+btn2.addEventListener("click", function() {filterSelection('cozinha')})
 btn3.addEventListener("click", function() {filterSelection('faca')})
 btn4.addEventListener("click", function() {filterSelection('fruits')})
 btn5.addEventListener("click", function() {filterSelection('colors')})
