@@ -1,0 +1,53 @@
+#descontoProdutoDestacado{
+    background-color: yellow;
+    width: min-content;
+}
+
+#imagemProdutoDestacado{
+    height: 400px;
+    margin: 10;
+    border-radius: 25px;
+}
+
+#precoProdutoDestacado{
+    font-size: 200%;
+}
+
+#containerProduto{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#containerImagem{
+    display: flex;
+    justify-content: center;
+}
+
+#containerPreco{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#containerPromocao{
+    margin-left: 25px;
+}
+
+#addCarrinho{
+    width: 70%;
+    height: 50px;
+    font-size: 200%;
+    border-radius: 25px;
+}
+
+#addCarrinho:hover{
+    background-color: aqua;
+}
+
+#addCarrinho:active{
+    background-color: rgb(81, 255, 0);
+}
+
+#containerBotao{
+    display: flex;
+    justify-content: center;
+}
