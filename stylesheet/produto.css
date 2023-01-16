@@ -15,7 +15,12 @@
 
 #containerProduto{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#containerDetalhes{
+    border: 2px solid black;
+    padding: 10px;
 }
 
 #containerImagem{
@@ -25,11 +30,16 @@
 
 #containerPreco{
     display: flex;
-    justify-content: flex-start;
+    justify-content:space-around;
 }
 
 #containerPromocao{
     margin-left: 25px;
+}
+
+#precoOriginalProdutoDestacado{
+    text-decoration: line-through;
+    color: gray;
 }
 
 #addCarrinho{

@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="stylesheet/produto.css">
 </head>
 <body>
+    <h1 id="nomeProdutoDestacado">Nome do produto</h1>
+    <h6 id="avaliacaoProdutoDestacado">Avaliação: 0.0</h6>
     <div id="containerProduto">
         <div id="containerImagem">
             <img id="imagemProdutoDestacado" src="https://via.placeholder.com/500x400" alt="placeholder">
         </div>
         <div id="containerDetalhes">
-            <h1 id="nomeProdutoDestacado">Nome do produto</h1>
-            <h6 id="avaliacaoProdutoDestacado">Avaliação: 0.0</h6>
             <div id="containerPreco">
-                <h3 id="precoProdutoDestacado">00,00€</h3>
+                <div>
+                    <h3 style="visibility: hidden;" id="precoOriginalProdutoDestacado">Preço original: 00,00€</h3>
+                    <h3 id="precoProdutoDestacado">00,00€</h3>
+                </div>
+                    
                 <div id="containerPromocao">
                     <h3 style="visibility: hidden;" id="descontoProdutoDestacado">0%</h3>
-                    <h3 style="visibility: hidden;" id="precoOriginalProdutoDestacado">Preço original: 00,00€</h3>
+                    
                 </div>
                 
             </div>
@@ -30,6 +34,6 @@
     </div>    
         <h2>Detalhes</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates quo unde labore odit, eum deleniti! Excepturi possimus sint omnis maiores a sit qui nesciunt quidem cum! Labore, dignissimos fugit?</p>
-        <script src="produto.js"></script>
+        <script src="JavaScript/produto.js"></script>
 </body>
 </html>
