@@ -11,13 +11,13 @@ btnZero = document.getElementById("zeroQuantity");
 btnAdd = document.getElementById("addQuantity");
 
 txtQuantity = document.getElementById("shopQuantity");
-let newQuantity = 0
+var newQuantity = 0
 
 function removeQuantity() 
 {
     Quantity = document.getElementById("shopQuantity").textContent;
     console.log(Quantity);
-    remove = 1;
+    var remove = 1;
     newQuantity = Quantity - remove;
     txtQuantity.textContent = newQuantity;
 }
@@ -32,7 +32,7 @@ function addQuantity()
 {
     Quantity = document.getElementById("shopQuantity").textContent;
     console.log(Quantity);
-    add = 1;
+    var add = 1;
     newQuantity = Quantity + add;
     txtQuantity.textContent = newQuantity;
 }
