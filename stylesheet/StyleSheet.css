@@ -31,8 +31,29 @@ body {
     align-items: center;
 }
 #produtosTituloPrincipal > p {
-    margin-right: 2%;
+    margin-right: 1%;
 }
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+  
+/* Add a light grey background on mouse-over */
+.btn:hover {
+background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+background-color: #666;
+color: white;
+}
+
 #botoesFiltragem {
     display: flex;
     flex-direction: row;
@@ -45,7 +66,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:left;
     border-radius: 10px;
     margin: 10px;
 }
@@ -68,7 +89,10 @@ body {
 #produtoFoto {
     display: flex;
     justify-content: center;
+    height: 250px;
+    width: 250px;
     margin: 10px;
+    border-radius: 15px;
 }
 #produtoDescriçao {
     display: flex;
