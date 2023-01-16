@@ -17,7 +17,7 @@ function removeQuantity()
 {
     Quantity = document.getElementById("shopQuantity").textContent;
     console.log(Quantity);
-    remove = 1
+    remove = 1;
     newQuantity = Quantity - remove;
     txtQuantity.textContent = newQuantity;
 }
