@@ -5,6 +5,7 @@ btn2 = document.getElementById("btn2");
 btn3 = document.getElementById("btn3");
 btn4 = document.getElementById("btn4");
 btn5 = document.getElementById("btn5");
+btn6 = document.getElementById("btn6");
 
 
 function filterSelection(element) {
@@ -69,10 +70,12 @@ for (var i = 0; i < btns.length; i++)
 }
 
 btn1.addEventListener("click", function() {filterSelection("all")})
-btn2.addEventListener("click", function() {filterSelection('cozinha')})
-btn3.addEventListener("click", function() {filterSelection('faca')})
-btn4.addEventListener("click", function() {filterSelection('fruits')})
-btn5.addEventListener("click", function() {filterSelection('colors')})
+btn2.addEventListener("click", function() {filterSelection('decorativo')})
+btn3.addEventListener("click", function() {filterSelection('jardinagem')})
+btn4.addEventListener("click", function() {filterSelection('diversao')})
+btn5.addEventListener("click", function() {filterSelection('limpeza')})
+btn6.addEventListener("click", function() {filterSelection('organizacao')})
+
 
 /*<div class="filterDiv cars">BMW</div>
 <div class="filterDiv colors fruits">Orange</div>

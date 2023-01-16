@@ -19,10 +19,13 @@
                 <ul>
                     <li><a class="active">Home</a></li>
                     <li><a>About</a></li>
-                    <li><a>Work</a></li>
-                    <li><a>Clients</a></li>
-                    <li><a>Contact</a></li>
                 </ul>
+                <div>
+                    <p>itens:<span id="shopQuantity">0</span></p>
+                    <button id ="removeQuantity">Menos</button>
+                    <button id="zeroQuantity">Zero</button>
+                    <button id ="addQuantity">Mais</button>
+                </div>
             </nav>
         </header>
         
@@ -35,29 +38,161 @@
                         <p>Filtro</p>
                         <div id="botoesFiltragem">
 
-                            <button id="btn1" class="btn active">todas</button>
-                            <button id="btn2" class="btn">2</button>
-                            <button id="btn3" class="btn"></button>
+                            <button id="btn1" class="btn active">Todos</button>
+                            <button id="btn2" class="btn">Decorativo</button>
+                            <button id="btn3" class="btn">Jardinagem</button>
+                            <button id="btn4" class="btn">Diversão</button>
+                            <button id="btn5" class="btn">Limpeza</button>
+                            <button id="btn6" class="btn">organização</button>
 
                         </div>
                     </div>
     
                     <div>
-                        
+
                     </div>
 
                     <div id="produtoLista">
 
-                        <div class="produto 1">
+                        <div class="produto decorativo">
                             <div id="produtoTitulo">
-                                <h1>taça de vinho</h1>
+                                <h1>Bota furada amarela</h1>
                             </div>
-                            <img src="/imagens/2/19_wineglass.jpg" id="produtoFoto" alt="foto temporaria">
+                            <img src="imagens/20_boots.jpg" id="produtoFoto" alt="Bota furada amarale">
                             <div id="produtoDescriçao">
                                 <p>Descrição previa do produto</p>
                             </div>
                         </div>
 
+                        <div class="produto jardinagem">
+                            <div id="produtoTitulo">
+                                <h1>Vaso regador azul</h1>
+                            </div>
+                            <img src="imagens/18_watering_can.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto diversao">
+                            <div id="produtoTitulo">
+                                <h1>Regua 1cm</h1>
+                            </div>
+                            <img src="imagens/Ruler-1024x1024.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto decorativo">
+                            <div id="produtoTitulo">
+                                <h1>Talheres acorrentados</h1>
+                            </div>
+                            <img src="imagens/chain_fork_01_p-1024x684.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto jardinagem  decorativo">
+                            <div id="produtoTitulo">
+                                <h1>Kit Chaleira e Caneca</h1>
+                            </div>
+                            <img src="imagens/teaset_01_p-1024x687.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto decorativo">
+                            <div id="produtoTitulo">
+                                <h1>Taça dupla</h1>
+                            </div>
+                            <img src="imagens/champagne_01_p-1116x1489.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto jardinagem decorativo">
+                            <div id="produtoTitulo">
+                                <h1>Canecas de casal</h1> <!-- PRISÃO -->
+                            </div>
+                            <img src="imagens/mugs_01_p-1024x692.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto limpeza">
+                            <div id="produtoTitulo">
+                                <h1>Vassoura horizontal</h1>
+                            </div>
+                            <img src="imagens/broom_03_p-1116x1682.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto decorativo">
+                            <div id="produtoTitulo">
+                                <h1>Talheres grossos</h1>
+                            </div>
+                            <img src="imagens/thick_set_01_p-1024x687.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto diversao">
+                            <div id="produtoTitulo">
+                                <h1>Panela de(pressão)</h1><!--Ideia do colega, não minha. ass: programador-->
+                            </div>
+                            <img src="imagens/pot_01_p-1024x685.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto decorativo organizacao">
+                            <div id="produtoTitulo">
+                                <h1>Chaveiro multiuso<br> de chave</h1>
+                            </div>
+                            <img src="imagens/key_01_p-1024x685.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+
+                        <div class="produto diversao">
+                            <div id="produtoTitulo">
+                                <h1>Canceca com<br>alça na horizontal</h1>
+                            </div>
+                            <img src="imagens/mug_01_p-1024x694.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="produto diversao">
+                            <div id="produtoTitulo">
+                                <h1>Remo inflavel</h1>
+                            </div>
+                            <img src="imagens/15_paddle.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="produto diversao organizacao">
+                            <div id="produtoTitulo">
+                                <h1>Kit Saleiro e Pimenteiro</h1>
+                            </div>
+                            <img src="imagens/13_shakers.jpg" id="produtoFoto" alt="foto temporaria">
+                            <div id="produtoDescriçao">
+                                <p>Descrição previa do produto</p>
+                            </div>
+                        </div>
                     </div>
 
                 </section>
@@ -69,6 +204,7 @@
             <h1>footer</h1>
         </footer>
         <script src="/JavaScript/filtro.js"></script>
+        <script src="/JavaScript/teste.js"></script>
     </body>
     
 </html>
