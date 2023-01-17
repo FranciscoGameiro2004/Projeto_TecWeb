@@ -17,7 +17,7 @@ function associarProduto(codigo){
             document.getElementById('')
             if (i[3][0] == 'True'){
                 document.getElementById('precoOriginalProdutoDestacado').innerHTML = i[3][1]
-                document.getElementById('descontoProdutoDestacado').innerHTML = `${i[3][2]}`
+                document.getElementById('descontoProdutoDestacado').innerHTML = `-${i[3][2]}`
                 document.getElementById('precoOriginalProdutoDestacado').style.visibility = 'visible'
                 document.getElementById('descontoProdutoDestacado').style.visibility = 'visible'
             }

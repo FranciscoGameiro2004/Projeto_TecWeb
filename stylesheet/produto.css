@@ -1,52 +1,62 @@
-#descontoProdutoDestacado{
-    background-color: yellow;
-    width: min-content;
-}
-
-#imagemProdutoDestacado{
-    height: 400px;
-    margin: 10;
-    border-radius: 25px;
-}
-
-#precoProdutoDestacado{
-    font-size: 200%;
-}
-
-#containerProduto{
+#containerProdutoDestacado{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    border: 1px solid black;
 }
 
-#containerDetalhes{
-    border: 2px solid black;
-    padding: 10px;
-}
-
-#containerImagem{
+#subcontainerInfosProdutoDestacado{
     display: flex;
     justify-content: center;
 }
 
-#containerPreco{
-    display: flex;
-    justify-content:space-around;
+#imagemProdutoDestacado{
+    height: 400px;
+    margin: 10px;
+    border-radius: 5%;
 }
 
-#containerPromocao{
-    margin-left: 25px;
+#caixa{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#subcontainerCaixa{
+    display: flex;
+    justify-content: space-around;
+}
+
+#precoProdutoDestacado{
+    font-size: 300%;
+    margin:0px;
 }
 
 #precoOriginalProdutoDestacado{
-    text-decoration: line-through;
+    margin:0px;
+    margin-bottom: 5px;
     color: gray;
+    text-decoration: line-through;
+}
+
+#descontoProdutoDestacado{
+    margin:0px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: yellow;
+    height: fit-content;
 }
 
 #addCarrinho{
     width: 70%;
     height: 50px;
-    font-size: 200%;
+    font-size: 150%;
     border-radius: 25px;
+    align-self: center;
 }
 
 #addCarrinho:hover{
@@ -55,9 +65,4 @@
 
 #addCarrinho:active{
     background-color: rgb(81, 255, 0);
-}
-
-#containerBotao{
-    display: flex;
-    justify-content: center;
 }
