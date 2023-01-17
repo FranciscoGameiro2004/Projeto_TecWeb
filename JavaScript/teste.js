@@ -6,6 +6,8 @@ function testeClick() {
     console.log("testeClick")
 }
 
+
+
 btnRemove = document.getElementById("removeQuantity");
 btnZero = document.getElementById("zeroQuantity");
 btnAdd = document.getElementById("addQuantity");
@@ -15,7 +17,7 @@ var newQuantity = 0
 
 function removeQuantity() 
 {
-    Quantity = document.getElementById("shopQuantity").textContent;
+    Quantity = parseInt(document.getElementById("shopQuantity").textContent);
     console.log(Quantity);
     var remove = 1;
     newQuantity = Quantity - remove;
@@ -30,7 +32,7 @@ function zeroQuantity()
 }
 function addQuantity() 
 {
-    Quantity = document.getElementById("shopQuantity").textContent;
+    Quantity = parseInt(document.getElementById("shopQuantity").textContent);
     console.log(Quantity);
     var add = 1;
     newQuantity = Quantity + add;
