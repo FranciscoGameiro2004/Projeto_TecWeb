@@ -8,6 +8,12 @@ function testeClick() {
 
 
 
+
+
+
+
+
+/*
 btnRemove = document.getElementById("removeQuantity");
 btnZero = document.getElementById("zeroQuantity");
 btnAdd = document.getElementById("addQuantity");
@@ -41,4 +47,4 @@ function addQuantity()
 btnRemove.addEventListener("click",removeQuantity);
 btnZero.addEventListener("click",zeroQuantity);
 btnAdd.addEventListener("click",addQuantity);
-
+*/
