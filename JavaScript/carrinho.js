@@ -32,5 +32,40 @@ function adicionarProdutoClicado(event) {
     console.log(preco)
     var imagemSrc = produto.getElementsByClassName("foto")[0].src
     console.log(imagemSrc)
+    imagemSrcFinal = imagemSrc.substring(22,)
+    console.log(imagemSrcFinal)
+    adicionarProdutoCarrinho(titulo,preco,imagemSrcFinal)
+    //update
+}
+function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
+    var linha = document.createElement("div") //cart row
+    linha.classList.add("carinhoProdutosLinha")
+    var carrinhoProdutos = document.getElementsByClassName("carinhoProdutos")[0]//cart items
+    var carrinhoProdutosNomes = document.getElementsByClassName("carinhoItemTitulo")
+    for (var i = 0; i < carrinhoProdutosNomes.length; i++) {
+        if (carrinhoProdutosNomes[i].innerText == titulo) {
+            alert('O item já se encontra na lista')
+            return
+        }
+    }
+    var linhaConteudo = 
+    `
+        <div class="carrinhoItem">
+            <img class="carrinhoItemImg" src=${imagemSrc}" alt="Foto do Produto">
+            <div>
+                <p class="carinhoItemTitulo">${titulo}</p>
+            </div>
+        </div>
 
+        <div class="carrinhoQuantidade">
+            <input class="carrinhoQuantidadeInp" type="number" value = "1" name="QUANTIDADE" min="1" max="10">
+        </div>
+
+        <div class="carrinhoPreco">
+            <p>€ <span>${preco}</span></p>
+            <input type="button" class="carrinhoQuantidadeBtn" value="Remover">
+        </div>
+    `
+    linha.innerHTML = linhaConteudo
+    carrinhoProdutos.append(linha)
 }
