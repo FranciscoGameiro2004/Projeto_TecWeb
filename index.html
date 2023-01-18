@@ -45,13 +45,13 @@
     
                     <div>
                         <div id="produtoLista">
-                            <div class="produto decorativo">
+                            <div class="produto decorativo"> <!-- parentElement.parentElement -->
                                 <div id="produtoTitulo">
-                                    <h1>Bota furada amarela</h1>
+                                    <h1 class="titulo">Bota furada amarela</h1>
                                 </div>
-                                <img src="imagens/20_boots.jpg" id="produtoFoto" alt="Bota furada amarale">
-                                <div id="produtoDescriçao">
-                                    <span>$19.99</span>
+                                <img src="imagens/20_boots.jpg" id="produtoFoto" class="foto" alt="Bota furada amarale">
+                                <div id="produtoDescriçao"> <!-- parentElement -->
+                                    <span class="preco">$19.99</span>
                                     <button type="button" id="produtoDescriçaoBtn"  class="btnAdd">ADD TO CART</button>
                                 </div>
                             </div>

@@ -17,12 +17,20 @@ function ready() {
     for (var i = 0; i < adicionarProduto.length; i++) 
     {
         var button = adicionarProduto[i]
-        button.addEventListener("click", function () { testeClick() })
+        button.addEventListener("click", adicionarProdutoClicado)
     }
 
 }
 
 function adicionarProdutoClicado(event) {
     var botao = event.target
-    var 
+    var produto = botao.parentElement.parentElement
+    console.log(produto)
+    var titulo = produto.getElementsByClassName("titulo")[0].innerText
+    console.log(titulo)
+    var preco  = produto.getElementsByClassName("preco")[0].innerText
+    console.log(preco)
+    var imagemSrc = produto.getElementsByClassName("foto")[0].src
+    console.log(imagemSrc)
+
 }
