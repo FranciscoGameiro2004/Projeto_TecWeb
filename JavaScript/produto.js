@@ -6,9 +6,12 @@ function associarProduto(codigo){
     listaProdutos = [['01','Porta chaves 1CM', '3,00€', ['False'], ['https://www.theuncomfortable.com/wp-content/uploads/2018/10/Ruler-1024x1024.jpg'],3],
                      ['02','Conjunto Vasos Caneca Longa', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5]]
     
+    var found = false                 
+
     for (let i of listaProdutos){
         console.log(i)
         if (i[0] == codigo){
+            found = true
             console.log(`Código do produto: ${i[0]}`)
             document.getElementById('nomeProdutoDestacado').innerHTML = i[1]
             document.getElementById('avaliacaoProdutoDestacado').innerHTML = `Avaliação: ${i[5]}`
@@ -23,6 +26,9 @@ function associarProduto(codigo){
             }
             break
         }
+    }
+    if (found === false){
+        window.location.href = '404.html'
     }
 }
 
