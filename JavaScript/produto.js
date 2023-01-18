@@ -24,6 +24,7 @@ function associarProduto(codigo){
             break
         }
     }
+    window.location.href = '404.html'
 }
 
 const urlPar = new URLSearchParams(window.location.search)
