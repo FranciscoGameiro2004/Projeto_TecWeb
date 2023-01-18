@@ -18,80 +18,12 @@ body {
     display: flex;
     flex-direction: row;
 }
-
-.carrinho_caixa{
-    background-color: rgba(252, 0, 0, 0.274);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 35%;
-    margin: 10;
-    margin: 5px 5px 5px 0px;
-}
-.carrinho_caixa_texto_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.carrinho_caixa_texto_linha {
-    display: flex;
-    flex-direction: row;
-}
-.carrinho_linha_ITEM {
-    width: 30%;
-}
-.carrinho_linha_PREÇO {
-    width: 30%;
-}
-.carrinho_linha_QUANTIDADE {
-    width: 30%;
-}
-.carrinho_linha_estilo_normal {
-    display: flex;
-    justify-content: center;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-.carrinho_linha_estilo_sublinhado {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid black;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-.carrinho_caixa_texto_produtos{
-    display: flex;
-    align-items: center;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-.carrinho_caixa_texto_produtos_linha {
-    display: flex;
-    align-items: center;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-.carrinho_caixa_texto_produtos_linha_img {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-}
-
-
 #centerSide {
     background-color: rgba(55, 0, 255, 0.274);
     display: flex;
     flex-direction: column;
     float: left;
-    width: 65%;
+    width: 100%;
     margin: 5px 0px 5px 0px;
 }
 #produtosTituloPrincipal {
@@ -161,7 +93,20 @@ color: white;
 }
 #produtoDescriçao {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+}
+#produtoDescriçaoBtn {
+    width: 65%;
+    height: 135%;
+    border-radius: 20px;
+    transition: color 3s ease 0.5s;
+    transition: background-color 1s;
+}
+#produtoDescriçaoBtn:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
 #endSite {
     background-color: rgba(57, 156, 53, 0.274);

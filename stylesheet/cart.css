@@ -1,0 +1,75 @@
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.carrinhoTitulo {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+.carrinhoInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+}
+.carinhoProdutos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    border-bottom: 2px solid black;
+}
+.carinhoProdutosLinha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+.carrinhoItem {
+    display: flex;
+    align-items: center;
+    width: 50%;;
+}
+.carrinhoItem > div > p{
+    font-size: 30px;
+}
+.carrinhoItemImg{
+    width: 100px;
+    height: auto;
+    margin-right: 10%;
+    border-radius: 10%;
+}
+.carrinhoQuantidade {
+    display: flex;
+    align-items: center;
+
+    width: 35%;
+}
+.carrinhoPreco {
+    display: flex;
+    align-items: center;
+
+    width: 20%;
+}
+.carrinhoQuantidadeInp {
+    width: 15%;
+    height: 50%;
+    font-size: 30px;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 15%;
+}
+.carrinhoQuantidadeBtn {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    margin-left: 2em;
+    width: 8em;
+    height: 3em;
+    border-radius: 4em;
+}
