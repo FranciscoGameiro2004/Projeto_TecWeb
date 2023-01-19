@@ -8,16 +8,18 @@ function start() {
     }
 }
 
-function testeClick() {
-    console.log("testeClick ");
-}
-
 function ready() {
     var adicionarProduto = document.getElementsByClassName("btnAdd")
     for (var i = 0; i < adicionarProduto.length; i++) 
     {
         var button = adicionarProduto[i]
         button.addEventListener("click", adicionarProdutoClicado)
+    }
+
+    var modificarProduto = document.getElementsByClassName("carrinhoQuantidadeInp")
+    for (var i = 0; i < modificarProduto.length; i++) {
+        var button = modificarProduto[i]
+        button.addEventListener("change",quantidadeAlterada)
     }
 
     var removerProduto = document.getElementsByClassName("btnRemover")
@@ -43,14 +45,13 @@ function adicionarProdutoClicado(event) {
     imagemSrcFinal = imagemSrc.substring(21,)
     //console.log(imagemSrcFinal)
     adicionarProdutoCarrinho(titulo,preco,imagemSrcFinal)
-    //update
+    update()
 }
 function removerProdutoCarrinho(event) {
     var botaoClicado = event.target
     botaoClicado.parentElement.parentElement.remove()
+    update()
 }
-
-
 function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
     //console.log(imagemSrc)
     var linha = document.createElement("div") //cart row
@@ -73,11 +74,11 @@ function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
         </div>
 
         <div class="carrinhoQuantidade">
-            <input class="carrinhoQuantidadeInp" type="number" value = "1" name="QUANTIDADE" min="1" max="10">
+            <input class="carrinhoQuantidadeInp" type="number" value = "2" name="QUANTIDADE" min="1" max="10">
         </div>
 
         <div class="carrinhoPreco">
-            <p>€ <span>${preco}</span></p>
+            <span class="precoCar">${preco}</span>
             <button type="button" class="btnRemover">Remover</button>
         </div>
     `
@@ -85,5 +86,42 @@ function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
     carrinhoProdutos.append(linha)
 
     linha.getElementsByClassName('btnRemover')[0].addEventListener('click',removerProdutoCarrinho)
+    linha.getElementsByClassName('carrinhoQuantidadeInp')[0].addEventListener('change',quantidadeAlterada)
+}
+function quantidadeAlterada(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    update()
+}
+function update() {
+    var carrinhoProdutosContainer = document.getElementsByClassName('carinhoProdutos')[0]
+    var carinhoProdutosLinha = carrinhoProdutosContainer.getElementsByClassName('carinhoProdutosLinha')
+    var total = 0
+    for (var i = 0; i < carinhoProdutosLinha.length; i++) 
+    {
+        var carinhoProdutosLinha = carinhoProdutosLinha[i+1]
+        console.log(carinhoProdutosLinha)
 
+        var precoElemento = carinhoProdutosLinha.getElementsByClassName('precoCar')[0]
+        console.log(precoElemento)
+
+        var quantidadeElemento = carinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[0]
+        console.log(quantidadeElemento)
+
+
+
+        var preço = parseFloat(precoElemento.innerText.replace('€', ''))
+        console.log(preço)
+
+        var quantidade = quantidadeElemento.value
+        console.log(quantidade)
+
+        total = total + (preço * quantidade)
+        console.log(total)
+    }
+    total = Math.round(total * 100) / 100
+    console.log(total)
+    document.getElementsByClassName('valorTotal')[0].innerText = '€' + total
 }

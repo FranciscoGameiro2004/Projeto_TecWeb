@@ -71,6 +71,7 @@ color: white;
 .produto {
     display: none; /* Hidden by default none*/
     flex-direction: column;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 10px 30px 10px 30px;
     margin: 10px;

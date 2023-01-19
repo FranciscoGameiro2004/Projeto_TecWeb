@@ -79,3 +79,9 @@
     color: white;
     background-color: rgb(255, 0, 0);
 }
+.fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
