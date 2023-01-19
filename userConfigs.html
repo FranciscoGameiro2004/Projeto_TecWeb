@@ -16,23 +16,24 @@
             <legend>O seu perfil</legend>
             
             <div>
-                <div id="containerNome,User&Newsletter">
-                    <div id="containerNome">
-                        <p>O seu nome:</p>
-                        <input type="text" name="Nome" value="User" required>
-                    </div>
+                <div id="containerNome_User_ProfPic">
+                    <div id="containerNome_User">
+                        <div id="containerNome">
+                            <p>O seu nome:</p>
+                            <input type="text" name="Nome" value="User" required>
+                        </div>
                         <div id="containerUser">
                             <p>O seu username:</p>
                             <input type="text", name="Username" value="username" required>
                         </div>        
-                </div>
+                    </div>
 
-                <div id="containerProfilePic">
-                    <p>Foto de perfil:</p>
-                    <img src="https://via.placeholder.com/200", height="200"><br>
-                    <input type="file" name="ProfilePic">
+                    <div id="containerProfilePic">
+                        <p>Foto de perfil:</p>
+                        <img src="https://via.placeholder.com/200", height="200"><br>
+                        <input type="file" name="ProfilePic">
+                    </div>
                 </div>
-
                 <div id="containerNewsletter">
                     <fieldset>
                         <legend>Newsletter</legend>
@@ -75,6 +76,31 @@
                 <input type="password" name="passAntiga" required>
             </div>
             <input id="submAlteracaoPass" type="submit" value="Alterar palavra-passe">
+        </fieldset>
+    </form>
+
+    <form action="" id="containerMétodoPagamento">
+        <fieldset id="fieldsetMétodoPagamento">
+            <legend>O seu método de pagamento</legend>
+            <div>
+                <div>
+                    <p>Escolha o seu método de pagamento:</p>
+                    <label>
+                        <input type="radio" name="metodoPagamento" value="mb" checked> Multibanco
+                    </label>
+                    <label>
+                        <input type="radio" name="metodoPagamento" value="mbWay"> MB Way
+                    </label>
+                    <label>
+                        <input type="radio" name="metodoPagamento" value="payPal"> PayPal
+                    </label> 
+                </div>
+                <div>
+                    <p>Insita a sua palavra-passe para confirmar.</p>
+                    <input type="password" name="passe" required>
+                </div> 
+            </div>
+            <input id="submAlteracaoMétodoPagamento" type="submit" value="Alterar método de pagamento">
         </fieldset>
     </form>
 </body>
