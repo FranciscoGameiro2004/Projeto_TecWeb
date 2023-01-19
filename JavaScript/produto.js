@@ -62,3 +62,15 @@ function associarProduto(codigo){
 const urlPar = new URLSearchParams(window.location.search)
 codigo = urlPar.get('produto')
 associarProduto(codigo)
+
+function ok(){
+    nEstrelas = document.forms["formAvaliacao"]["avaliação"].value
+    console.log(nEstrelas)
+
+    for (let i = 0; i < nEstrelas; i++){
+        document.getElementsByClassName('estrela')[i].style.color = 'yellow'
+    }
+    for (let i = nEstrelas; i < 5; i++){
+        document.getElementsByClassName('estrela')[i].style.color = 'black'
+    }
+}
