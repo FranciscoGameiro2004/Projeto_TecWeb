@@ -7,9 +7,10 @@ body {
     margin: 10;
 }
 .customHeader {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px 0;
-    margin: 0px auto;
     width: 100%;
     text-align: center;
     background-color: rgb(255, 255, 255);
@@ -59,22 +60,24 @@ color: white;
     gap: 5px;
 }
 #produtoLista {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-radius: 10px;
     margin: 10px;
+    border: 2px solid black;
 }
 /*AQUI*/
 .produto {
     display: none; /* Hidden by default none*/
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 255, 191, 0.445);
     border-radius: 10px 30px 10px 30px;
     margin: 10px;
+    border: 2px solid black;
 }
 .show {
     display: flex;

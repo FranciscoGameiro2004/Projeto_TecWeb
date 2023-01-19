@@ -8,20 +8,24 @@
         <link href="/stylesheet/StyleSheet.css" rel="stylesheet">
         <link href="/stylesheet/topnav.css" rel="stylesheet">
         <link href="/stylesheet/cart.css" rel="stylesheet">
+        <link href="/stylesheet/auxilio.css" rel="stylesheet" >
     </head>
 
     <body>
         <header>
             <div class="customHeader">
-                <p>teste</p> 
+                <div style="background-color: #3838e4;">
+                    <img src="" alt="logo">
+                </div>
+
+                <nav id="topnav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#produtoLista">Loja</a></li>
+                        <li><a href="#shoppingCart">Cart</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav id="topnav">
-                <ul>
-                    <li><a class="active">Home</a></li>
-                    <li><a href="#produtoLista">Loja</a></li>
-                    <li><a href="#shoppingCart">Cart</a></li>
-                </ul>
-            </nav>
         </header>
         
         <main id="structure">
@@ -164,7 +168,7 @@
 
                         <div class="produto decorativo organizacao">
                             <div id="produtoTitulo">
-                                <h1 class="titulo">Chaveiro multiuso de chave</h1>
+                                <h1 class="titulo">Chaveiro multiuso</h1>
                             </div>
                             <img src="imagens/key_01_p-1024x685.jpg" id="produtoFoto" class="foto" alt="foto temporaria">
                             <div id="produtoDescriçao">
@@ -176,7 +180,7 @@
 
                         <div class="produto diversao">
                             <div id="produtoTitulo">
-                                <h1 class="titulo">Canceca comalça na horizontal</h1>
+                                <h1 class="titulo">Caneca alça horizontal</h1>
                             </div>
                             <img src="imagens/mug_01_p-1024x694.jpg" id="produtoFoto" class="foto" alt="foto temporaria">
                             <div id="produtoDescriçao">
@@ -240,8 +244,13 @@
                     </div>
 
                     <div class="fim">
+                        
                         <h1 class="valorTotal">€0</h1>
-                        <button>finalizar compra</button>
+                        <button class="finishCart">finalizar compra</button>
+
+                        <input type="checkbox" class="check" id="check">
+                        <label style="margin-bottom: 2%;">Você confirma a compra?</label>
+                    
                     </div>
 
                 </section>

@@ -1,6 +1,5 @@
 #topnav {
-    overflow: hidden;
-    background-color: rgb(189, 179, 179);
+    background-color: #3838e4;
     text-align: center;
 }
 #topnav li {
@@ -9,23 +8,13 @@
 #topnav a {
     display: inline-block;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin: auto;
-}
-#topnav a.active {
-    background-color: #04AA6D;
+    font-size: 18px;
+    margin-right: 5%;
+    margin-left: 5%;
     color: white;
+    border: 2px solid black;
 }
 #topnav a:hover {
-    background-color: white;
-    color: black;
+    color: #e8f77d;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0 auto;
-  }

@@ -30,6 +30,8 @@ function ready() {
         button.removeEventListener("click", removerProdutoCarrinho)
     }
 
+    
+
 }
 
 function adicionarProdutoClicado(event) {
@@ -74,7 +76,7 @@ function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
         </div>
 
         <div class="carrinhoQuantidade">
-            <input class="carrinhoQuantidadeInp" type="number" value = "2" name="QUANTIDADE" min="1" max="10">
+            <input class="carrinhoQuantidadeInp" type="number" value = "1" name="QUANTIDADE" min="1" max="10">
         </div>
 
         <div class="carrinhoPreco">
@@ -119,7 +121,6 @@ function update() {
         total = total + (preço * quantidade)
         console.log(total)
 
-        carinhoProdutosLinha.getElementsByClassName('precoCar')[0].innerHTML = preço * quantidade
     }
     total = Math.round(total * 100) / 100
     console.log(total)
