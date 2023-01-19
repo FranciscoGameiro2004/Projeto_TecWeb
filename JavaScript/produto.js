@@ -5,7 +5,19 @@ function associarProduto(codigo){
     I      0                   1             2                             3                                               4                              5             6               7
     */
     listaProdutos = [['01','Bota furada amarela', '3,00€', ['False'], ['imagens/20_boots.jpg'],3,'Detalhes produto 01','Detalhes breve do produto 01'],
-                     ['02','Conjunto Vasos Caneca Longa', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 02','Detalhes produto 02']]
+                     ['02','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 02','Detalhes produto 02'],
+                     ['03','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 03','Detalhes produto 03'],
+                     ['04','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 04','Detalhes produto 04'],
+                     ['05','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 05','Detalhes produto 05'],
+                     ['06','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 06','Detalhes produto 06'],
+                     ['07','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 07','Detalhes produto 07'],
+                     ['08','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 08','Detalhes produto 08'],
+                     ['09','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 09','Detalhes produto 09'],
+                     ['10','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 10','Detalhes produto 10'],
+                     ['11','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 11','Detalhes produto 11'],
+                     ['12','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 12','Detalhes produto 12'],
+                     ['13','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 13','Detalhes produto 13'],
+                     ['14','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 14','Detalhes produto 14'],]
     
     var found = false                 
 
