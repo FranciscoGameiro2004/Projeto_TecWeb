@@ -1,0 +1,18 @@
+#fieldsetEmail, #fieldsetPassword{
+    display: flex;
+    width: 35%;
+    align-items: flex-start;
+}
+
+#submAlteracaoEmail, #submAlteracaoPass{
+    align-self: center;
+}
+
+#submAlteracaoEmail,#containterEmailAntigo,#containterEmailNovo,#submAlteracaoPass,#containterPassAntiga,#containterPassNovo{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#containerAlteracaoEmail legend, #containerAlteracaoPassword legend{
+    font-size: 200%;
+}
