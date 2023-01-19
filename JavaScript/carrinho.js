@@ -33,15 +33,15 @@ function ready() {
 function adicionarProdutoClicado(event) {
     var botao = event.target
     var produto = botao.parentElement.parentElement
-    console.log(produto)
+    //console.log(produto)
     var titulo = produto.getElementsByClassName("titulo")[0].innerText
-    console.log(titulo)
+    //console.log(titulo)
     var preco  = produto.getElementsByClassName("preco")[0].innerText
-    console.log(preco)
+    //console.log(preco)
     var imagemSrc = produto.getElementsByClassName("foto")[0].src
-    console.log(imagemSrc)
+    //console.log(imagemSrc)
     imagemSrcFinal = imagemSrc.substring(21,)
-    console.log(imagemSrcFinal)
+    //console.log(imagemSrcFinal)
     adicionarProdutoCarrinho(titulo,preco,imagemSrcFinal)
     //update
 }
@@ -52,7 +52,7 @@ function removerProdutoCarrinho(event) {
 
 
 function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
-    console.log(imagemSrc)
+    //console.log(imagemSrc)
     var linha = document.createElement("div") //cart row
     linha.classList.add("carinhoProdutosLinha")
     var carrinhoProdutos = document.getElementsByClassName("carinhoProdutos")[0]//cart items
@@ -78,11 +78,12 @@ function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
 
         <div class="carrinhoPreco">
             <p>€ <span>${preco}</span></p>
-            <input type="button" class="btnRemover" value="Remover">
+            <button type="button" class="btnRemover">Remover</button>
         </div>
     `
     linha.innerHTML = linhaConteudo
     carrinhoProdutos.append(linha)
-    ready()
+
     linha.getElementsByClassName('btnRemover')[0].addEventListener('click',removerProdutoCarrinho)
+
 }
