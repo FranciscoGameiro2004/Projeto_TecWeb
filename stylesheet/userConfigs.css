@@ -1,8 +1,10 @@
-#fieldsetEmail, #fieldsetPassword{
+#fieldsetEmail, #fieldsetPassword, #fieldsetPerfil{
     display: flex;
-    width: 35%;
+    width: 45%;
     align-items: flex-start;
 }
+
+
 
 #submAlteracaoEmail, #submAlteracaoPass{
     align-self: center;
@@ -13,6 +15,9 @@
     margin-right: 10px;
 }
 
-#containerAlteracaoEmail legend, #containerAlteracaoPassword legend{
+#containerAlteracaoEmail legend, #containerAlteracaoPassword legend, #fieldsetPerfil legend{
     font-size: 200%;
+}
+#fieldsetPerfil #containerNewsletter{
+    font-size: 100%;
 }

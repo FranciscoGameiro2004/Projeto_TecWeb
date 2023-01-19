@@ -4,7 +4,7 @@ function associarProduto(codigo){
     [Código do produto],[Nome do produto],[Preço],[[Existe Promocao?],[Preço original],[% Desconto]],[[Thumbnail],[[Foto 1],[Foto 2], ... , [Foto N]],[Avaliação],[Descrição breve],[Detalhes]
     I      0                   1             2                             3                                               4                              5             6               7
     */
-    listaProdutos = [['01','Porta chaves 1CM', '3,00€', ['False'], ['https://www.theuncomfortable.com/wp-content/uploads/2018/10/Ruler-1024x1024.jpg'],3,'Detalhes produto 01','Detalhes breve do produto 01'],
+    listaProdutos = [['01','Bota furada amarela', '3,00€', ['False'], ['imagens/20_boots.jpg'],3,'Detalhes produto 01','Detalhes breve do produto 01'],
                      ['02','Conjunto Vasos Caneca Longa', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 02','Detalhes produto 02']]
     
     var found = false                 
@@ -15,7 +15,20 @@ function associarProduto(codigo){
             found = true
             console.log(`Código do produto: ${i[0]}`)
             document.getElementById('nomeProdutoDestacado').innerHTML = i[1]
-            document.getElementById('avaliacaoProdutoDestacado').innerHTML = `Avaliação: ${i[5]}`
+            count = 0
+            while (true){
+                estrela = ' '
+                
+                if (count < i[5]){
+                    estrela = estrela.replace(' ', '★ ')
+                    count = count + 1
+                }
+                else{
+                    break
+                }
+            }
+            
+            document.getElementById('avaliacaoProdutoDestacado').innerHTML = `${estrela} ${i[5]}`
             document.getElementById('imagemProdutoDestacado').src = i[4][0]
             document.getElementById('precoProdutoDestacado').innerHTML = i[2]
             document.getElementById('detalhesProdutoDestacado').innerHTML = i[7]
