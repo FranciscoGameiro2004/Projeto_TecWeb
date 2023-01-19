@@ -110,8 +110,6 @@ function update() {
         var quantidadeElemento = carinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[0]
         console.log(quantidadeElemento)
 
-
-
         var preço = parseFloat(precoElemento.innerText.replace('€', ''))
         console.log(preço)
 
@@ -120,6 +118,8 @@ function update() {
 
         total = total + (preço * quantidade)
         console.log(total)
+
+        carinhoProdutosLinha.getElementsByClassName('precoCar')[0].innerHTML = preço * quantidade
     }
     total = Math.round(total * 100) / 100
     console.log(total)
