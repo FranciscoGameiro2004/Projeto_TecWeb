@@ -5,19 +5,19 @@ function associarProduto(codigo){
     I      0                   1             2                             3                                               4                              5             6               7
     */
     listaProdutos = [['01','Bota furada amarela', '3,00€', ['False'], ['imagens/20_boots.jpg'],3,'Detalhes produto 01','Detalhes breve do produto 01'],
-                     ['02','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 02','Detalhes produto 02'],
-                     ['03','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 03','Detalhes produto 03'],
-                     ['04','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 04','Detalhes produto 04'],
-                     ['05','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 05','Detalhes produto 05'],
-                     ['06','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 06','Detalhes produto 06'],
-                     ['07','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 07','Detalhes produto 07'],
-                     ['08','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 08','Detalhes produto 08'],
-                     ['09','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 09','Detalhes produto 09'],
-                     ['10','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 10','Detalhes produto 10'],
-                     ['11','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 11','Detalhes produto 11'],
-                     ['12','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 12','Detalhes produto 12'],
-                     ['13','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 13','Detalhes produto 13'],
-                     ['14','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['https://www.theuncomfortable.com/wp-content/uploads/2017/04/24_long_mug.jpg'],4.5,'Descrição breve do produto 14','Detalhes produto 14'],]
+                     ['02','Vaso regador azul', '15,00€', ['True', '20,00€', '25%'], ['imagens/18_watering_can.jpg'],4.5,'Descrição breve do produto 02','Detalhes produto 02'],
+                     ['03','Regua 1cm', '15,00€', ['True', '20,00€', '25%'], ['imagens/Ruler-1024x1024.jpg'],4.5,'Descrição breve do produto 03','Detalhes produto 03'],
+                     ['04','Talheres acorrentados', '15,00€', ['True', '20,00€', '25%'], ['imagens/chain_fork_01_p-1024x684.jpg'],4.5,'Descrição breve do produto 04','Detalhes produto 04'],
+                     ['05','Kit Chaleira e Caneca', '15,00€', ['True', '20,00€', '25%'], ['imagens/teaset_01_p-1024x687.jpg'],4.5,'Descrição breve do produto 05','Detalhes produto 05'],
+                     ['06','Taça dupla', '15,00€', ['True', '20,00€', '25%'], ['imagens/champagne_01_p-1116x1489.jpg'],4.5,'Descrição breve do produto 06','Detalhes produto 06'],
+                     ['07','Canecas de casal', '15,00€', ['True', '20,00€', '25%'], ['imagens/mugs_01_p-1024x692.jpg'],4.5,'Descrição breve do produto 07','Detalhes produto 07'],
+                     ['08','Vassoura horizontal', '15,00€', ['True', '20,00€', '25%'], ['imagens/broom_03_p-1116x1682.jpg'],4.5,'Descrição breve do produto 08','Detalhes produto 08'],
+                     ['09','Talheres grossos', '15,00€', ['True', '20,00€', '25%'], ['imagens/thick_set_01_p-1024x687.jpg'],4.5,'Descrição breve do produto 09','Detalhes produto 09'],
+                     ['10','Panela de(pressão)', '15,00€', ['True', '20,00€', '25%'], ['imagens/pot_01_p-1024x685.jpg'],4.5,'Descrição breve do produto 10','Detalhes produto 10'],
+                     ['11','Chaveiro multiuso', '15,00€', ['True', '20,00€', '25%'], ['imagens/key_01_p-1024x685.jpg'],4.5,'Descrição breve do produto 11','Detalhes produto 11'],
+                     ['12','Canceca alça', '15,00€', ['True', '20,00€', '25%'], ['imagens/mug_01_p-1024x694.jpg'],4.5,'Descrição breve do produto 12','Detalhes produto 12'],
+                     ['13','Remo inflavel', '15,00€', ['True', '20,00€', '25%'], ['imagens/15_paddle.jpg'],4.5,'Descrição breve do produto 13','Detalhes produto 13'],
+                     ['14','Kit Saleiro e Pimenteiro', '15,00€', ['True', '20,00€', '25%'], ['imagens/13_shakers.jpg'],4.5,'Descrição breve do produto 14','Detalhes produto 14'],]
     
     var found = false                 
 
