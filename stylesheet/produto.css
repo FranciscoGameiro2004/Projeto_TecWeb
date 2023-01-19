@@ -80,3 +80,30 @@
 #addCarrinho:active{
     background-color: rgb(81, 255, 0);
 }
+
+#textAreaComentário{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+#containerEstrelas{
+    display: flex;
+}
+
+#containerPontuacao{
+    align-items: center;
+}
+
+#containerEstrelas input{
+    visibility: visible;
+}
+
+#containerEstrelas input{
+    visibility: visible;
+}
+
+#containerPontuacao p{
+    height: max-content;
+    margin: auto;
+}

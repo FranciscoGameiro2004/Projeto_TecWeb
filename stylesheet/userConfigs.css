@@ -22,3 +22,11 @@
 #containerNome_User_ProfPic{
     display: flex;
 }
+
+#containerProfilePic{
+    margin-left: 25px;
+}
+
+#textoComentário{
+    width: 10px;
+}
