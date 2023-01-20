@@ -65,6 +65,7 @@ associarProduto(codigo)
 
 function ok(){
     nEstrelas = document.forms["formAvaliacao"]["avaliação"].value
+    
     console.log(nEstrelas)
 
     for (let i = 0; i < nEstrelas; i++){
@@ -74,3 +75,15 @@ function ok(){
         document.getElementsByClassName('estrela')[i].style.color = 'black'
     }
 }
+
+let avaliacao = document.forms["formAvaliacao"]
+avaliacao.addEventListener('submit', function(event){
+    console.log(event)
+    event.preventDefault()
+    document.getElementById('containerComentários').innerHTML +=
+    `<br>
+    <fieldset>
+        <legend>De anônimo | ${document.forms["formAvaliacao"]["avaliação"].value}/5★</legend>
+        <p>${document.getElementById("textAreaComentário").value}</p>
+    </fieldset>`
+});

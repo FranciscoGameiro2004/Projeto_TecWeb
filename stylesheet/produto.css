@@ -96,11 +96,7 @@
 }
 
 #containerEstrelas input{
-    visibility: visible;
-}
-
-#containerEstrelas input{
-    visibility: visible;
+    visibility: hidden;
 }
 
 #containerPontuacao p{
