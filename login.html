@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sessão</title>
-    <link href="StyleSheet.css" rel="stylesheet">
+    <link href="stylesheet/login.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Iniciar sessão</h1>
-    <form action="https://www.webucator.com/materials/htm101/" method="post">
-        <fieldset>
-            Email <br>
-            <input type="email" name="email" id="email" required> <br>
-            Password <br>
-            <input type="password" name="password" id="password" required> <br>
-            <input type="submit" name="submeter" id="submeter" value="Iniciar sessão">
-        </fieldset>
-    </form>
-    <p>Não tem conta? <a href="register.html">Crie uma!</a></p>
+    <div class="containerExtra">
+        <div class="container">
+            <div id="containerFormConta">
+                <h1>Iniciar sessão</h1>
+                <div id="containerFormulario">
+                    <form action="https://www.webucator.com/materials/htm101/" method="post">
+                        <fieldset>
+                            Email <br>
+                            <input type="email" name="email" id="email" required> <br>
+                            Password <br>
+                            <input type="password" name="password" id="password" required> <br>
+                            <input type="submit" name="submeter" id="submeter" value="Iniciar sessão">
+                        </fieldset>
+                    </form>
+                    <p>Não tem conta? <a href="register.html">Crie uma!</a></p> 
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+    
+    
 </body>
 </html>

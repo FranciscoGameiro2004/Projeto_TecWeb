@@ -104,22 +104,25 @@ function update() {
     var i = 0
     while( i < parseInt(carrinhoProdutosLinha.length)) 
     {
+        carrinhoProdutosContainer = document.getElementsByClassName('carinhoProdutos')[i]
+        
         console.log("i = ")
         console.log(i)
         console.log(parseInt(carrinhoProdutosLinha.length))
         var carrinhoProdutosLinha = carrinhoProdutosLinha[i]
 
-        var precoElemento = carrinhoProdutosLinha.getElementsByClassName('precoCar')[0]
+        var precoElemento = carrinhoProdutosLinha.getElementsByClassName('precoCar')[i]
+        console.log(carrinhoProdutosLinha.getElementsByClassName('precoCar')[i])
 
-        var quantidadeElemento = carrinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[0]
+        var quantidadeElemento = carrinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[i]
 
-        var preço = parseFloat(precoElemento.innerText.replace('€', ''))
+        var preço = parseFloat(precoElemento.innerHTML.replace('€', ''))
 
         var quantidade = parseInt(quantidadeElemento.value)
 
         total = total + (preço * quantidade)
 
-        i++
+        i += 1
         
         console.log("i = ")
         console.log(i)
