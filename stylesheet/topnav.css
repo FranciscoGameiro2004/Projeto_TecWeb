@@ -1,6 +1,7 @@
 #topnav {
     width: 100%;
     text-align: center;
+    margin-right: 2%;
 }
 #topnav ul {
     display: flex;
