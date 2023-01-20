@@ -41,7 +41,7 @@ function associarProduto(codigo){
                 }
             }
             
-            document.getElementById('avaliacaoProdutoDestacado').innerHTML = `${estrela} ${i[5]}`
+            document.getElementById('avaliacaoProdutoDestacado').innerHTML = `${estrela} ${i[5]}/5★`
             document.getElementById('imagemProdutoDestacado').src = i[4][0]
             document.getElementById('precoProdutoDestacado').innerHTML = i[2]
             document.getElementById('detalhesProdutoDestacado').innerHTML = i[7]
@@ -70,7 +70,7 @@ function ok(){
     console.log(nEstrelas)
 
     for (let i = 0; i < nEstrelas; i++){
-        document.getElementsByClassName('estrela')[i].style.color = 'yellow'
+        document.getElementsByClassName('estrela')[i].style.color = 'gray'
     }
     for (let i = nEstrelas; i < 5; i++){
         document.getElementsByClassName('estrela')[i].style.color = 'black'
