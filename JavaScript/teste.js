@@ -6,7 +6,17 @@ function testeClick() {
     console.log("testeClick")
 }
 
+function testarTemConta(){
+    const urlPar = new URLSearchParams(window.location.search)
+    login = urlPar.get('login')
+    if (login==1){
+        document.getElementById("containerConta").innerHTML = `
+        <a href="userConfigs.html">Gerir conta</a>
+        <a href="index.html">Terminar sessão</a>`
+    }
+}
 
+testarTemConta()
 
 
 
