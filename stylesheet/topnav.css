@@ -1,19 +1,21 @@
 #topnav {
-    background-color: #3838e4;
+    background-color: #D4EDF7;
     text-align: center;
 }
 #topnav li {
-    display: inline
+    display: inline;
+    background-color: black;
+    border-radius: 10px 30px 10px 30px;
+    padding: 10px;
 }
 #topnav a {
-    display: inline-block;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    margin-right: 5%;
-    margin-left: 5%;
+    font-size: 25px;
+    margin-right: 10%;
+    margin-left: 6%;
     color: white;
-    border: 2px solid black;
+
 }
 #topnav a:hover {
     color: #e8f77d;

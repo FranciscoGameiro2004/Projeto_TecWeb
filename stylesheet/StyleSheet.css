@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #D4EDF7;
     display: flex;
     flex-direction: column;
     font-size: 18px;
@@ -13,14 +13,13 @@ body {
     padding: 20px 0;
     width: 100%;
     text-align: center;
-    background-color: rgb(255, 255, 255);
 }
 #structure {
     display: flex;
     flex-direction: row;
 }
 #centerSide {
-    background-color: rgba(55, 0, 255, 0.274);
+    background-color: #D4EDF7;
     display: flex;
     flex-direction: column;
     float: left;
@@ -60,14 +59,13 @@ color: white;
     gap: 5px;
 }
 #produtoLista {
-    background-color: rgb(255, 255, 255);
+    background-color: #D4EDF7;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-radius: 10px;
     margin: 10px;
-    border: 2px solid black;
 }
 /*AQUI*/
 .produto {

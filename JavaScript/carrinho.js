@@ -7,7 +7,6 @@ function start() {
         ready()
     }
 }
-
 function ready() {
     var adicionarProduto = document.getElementsByClassName("btnAdd")
     for (var i = 0; i < adicionarProduto.length; i++) 
@@ -17,7 +16,8 @@ function ready() {
     }
 
     var modificarProduto = document.getElementsByClassName("carrinhoQuantidadeInp")
-    for (var i = 0; i < modificarProduto.length; i++) {
+    for (var i = 0; i < modificarProduto.length; i++) 
+    {
         var button = modificarProduto[i]
         button.addEventListener("change",quantidadeAlterada)
     }
@@ -33,7 +33,6 @@ function ready() {
     
 
 }
-
 function adicionarProdutoClicado(event) {
     var botao = event.target
     var produto = botao.parentElement.parentElement
@@ -47,12 +46,6 @@ function adicionarProdutoClicado(event) {
     imagemSrcFinal = imagemSrc.substring(21,)
     //console.log(imagemSrcFinal)
     adicionarProdutoCarrinho(titulo,preco,imagemSrcFinal)
-    update()
-}
-function removerProdutoCarrinho(event) {
-    var botaoClicado = event.target
-    botaoClicado.parentElement.parentElement.remove()
-    update()
 }
 function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
     //console.log(imagemSrc)
@@ -89,6 +82,12 @@ function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
 
     linha.getElementsByClassName('btnRemover')[0].addEventListener('click',removerProdutoCarrinho)
     linha.getElementsByClassName('carrinhoQuantidadeInp')[0].addEventListener('change',quantidadeAlterada)
+    update()
+}
+function removerProdutoCarrinho(event) {
+    var botaoClicado = event.target
+    botaoClicado.parentElement.parentElement.remove()
+    update()
 }
 function quantidadeAlterada(event) {
     var input = event.target
@@ -99,30 +98,32 @@ function quantidadeAlterada(event) {
 }
 function update() {
     var carrinhoProdutosContainer = document.getElementsByClassName('carinhoProdutos')[0]
-    var carinhoProdutosLinha = carrinhoProdutosContainer.getElementsByClassName('carinhoProdutosLinha')
+    var carrinhoProdutosLinha = carrinhoProdutosContainer.getElementsByClassName('carinhoProdutosLinha')
+    console.log(parseInt(carrinhoProdutosLinha.length))
     var total = 0
-    for (var i = 0; i < carinhoProdutosLinha.length; i++) 
+    var i = 0
+    while( i < parseInt(carrinhoProdutosLinha.length)) 
     {
-        var carinhoProdutosLinha = carinhoProdutosLinha[i+1]
-        console.log(carinhoProdutosLinha)
+        console.log("i = ")
+        console.log(i)
+        console.log(parseInt(carrinhoProdutosLinha.length))
+        var carrinhoProdutosLinha = carrinhoProdutosLinha[i]
 
-        var precoElemento = carinhoProdutosLinha.getElementsByClassName('precoCar')[0]
-        console.log(precoElemento)
+        var precoElemento = carrinhoProdutosLinha.getElementsByClassName('precoCar')[0]
 
-        var quantidadeElemento = carinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[0]
-        console.log(quantidadeElemento)
+        var quantidadeElemento = carrinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[0]
 
         var preço = parseFloat(precoElemento.innerText.replace('€', ''))
-        console.log(preço)
 
-        var quantidade = quantidadeElemento.value
-        console.log(quantidade)
+        var quantidade = parseInt(quantidadeElemento.value)
 
         total = total + (preço * quantidade)
-        console.log(total)
 
+        i++
+        
+        console.log("i = ")
+        console.log(i)
     }
     total = Math.round(total * 100) / 100
-    console.log(total)
     document.getElementsByClassName('valorTotal')[0].innerText = '€' + total
 }
