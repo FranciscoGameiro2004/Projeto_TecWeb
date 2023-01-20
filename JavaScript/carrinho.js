@@ -30,8 +30,17 @@ function ready() {
         button.removeEventListener("click", removerProdutoCarrinho)
     }
 
-    
+    document.getElementsByClassName('finishCart')[0].addEventListener('click', finalizarCompraClicado)
 
+}
+function finalizarCompraClicado() {
+    alert('Obrigado por comprar na Bizarra')
+    var cartItems = document.getElementsByClassName('carinhoProdutos')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    document.getElementsByClassName('valorTotal')[0].innerText = '€' + 0
+    updateCartTotal()
 }
 function adicionarProdutoClicado(event) {
     var botao = event.target
