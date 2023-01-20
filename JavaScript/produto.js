@@ -78,12 +78,15 @@ function ok(){
 
 let avaliacao = document.forms["formAvaliacao"]
 avaliacao.addEventListener('submit', function(event){
-    console.log(event)
     event.preventDefault()
-    document.getElementById('containerComentários').innerHTML +=
-    `<br>
-    <fieldset>
-        <legend>De anônimo | ${document.forms["formAvaliacao"]["avaliação"].value}/5★</legend>
-        <p>${document.getElementById("textAreaComentário").value}</p>
-    </fieldset>`
+    console.log(document.forms["formAvaliacao"]["avaliação"].value)
+    if (document.forms["formAvaliacao"]["avaliação"].value != ''){
+       document.getElementById('containerComentários').innerHTML = document.getElementById('containerComentários').innerHTML.replace('<p>Não existe quaisquer comentário.</p>','')
+       document.getElementById('containerComentários').innerHTML +=
+        `<fieldset>
+            <legend>De anônimo | ${document.forms["formAvaliacao"]["avaliação"].value}/5★</legend>
+            <p>${document.getElementById("textAreaComentário").value}</p>
+        </fieldset>
+        <br>` 
+    }
 });
