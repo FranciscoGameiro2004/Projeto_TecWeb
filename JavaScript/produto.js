@@ -27,6 +27,7 @@ function associarProduto(codigo){
             found = true
             console.log(`Código do produto: ${i[0]}`)
             document.getElementById('nomeProdutoDestacado').innerHTML = i[1]
+            document.getElementById('tituloProduto').innerHTML = i[1]
             count = 0
             while (true){
                 estrela = ' '
