@@ -1,6 +1,7 @@
 #containerFormulario{
     border: 2px solid black;
     border-radius: 15%;
+    width: 90%;
 }
 
 #containerFormulario fieldset{
