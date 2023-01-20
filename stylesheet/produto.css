@@ -63,6 +63,7 @@
     background-color: yellow;
     height: fit-content;
     border-radius: 10%;
+    font-size: 200%;
 }
 
 #addCarrinho{
@@ -96,11 +97,7 @@
 }
 
 #containerEstrelas input{
-    visibility: visible;
-}
-
-#containerEstrelas input{
-    visibility: visible;
+    visibility: hidden;
 }
 
 #containerPontuacao p{
