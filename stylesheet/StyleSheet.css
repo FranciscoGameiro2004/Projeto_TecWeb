@@ -113,7 +113,20 @@ color: white;
 #endSite {
     background-color: rgba(57, 156, 53, 0.274);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: 10;
+}
+.endSiteDiv1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.endSiteDiv2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
 }
