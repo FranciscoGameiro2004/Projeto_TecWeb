@@ -13,6 +13,7 @@ function testarTemConta(){
         document.getElementById("containerConta").innerHTML = `
         <a href="userConfigs.html">Gerir conta</a>
         <a href="index.html">Terminar sessão</a>`
+        document.getElementById('homeBtn').href = `index.html?login=1`
     }
 }
 
