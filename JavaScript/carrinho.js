@@ -5,6 +5,7 @@ function start() {
         document.addEventListener('DOMContentLoaded', ready)
     } else {
         ready()
+        update()
     }
 }
 function ready() {
@@ -30,8 +31,8 @@ function ready() {
         button.removeEventListener("click", removerProdutoCarrinho)
     }
 
-    document.getElementsByClassName('finishCart')[0].addEventListener('click', finalizarCompraClicado)
-
+    //document.getElementsByClassName('finishCart')[0].addEventListener('click', finalizarCompraClicado)
+    document.getElementsByClassName('finishCart')[0].addEventListener('click', update)
 }
 function finalizarCompraClicado() {
     alert('Obrigado por comprar na Bizarra')
@@ -108,34 +109,38 @@ function quantidadeAlterada(event) {
 function update() {
     var carrinhoProdutosContainer = document.getElementsByClassName('carinhoProdutos')[0]
     var carrinhoProdutosLinha = carrinhoProdutosContainer.getElementsByClassName('carinhoProdutosLinha')
-    console.log(parseInt(carrinhoProdutosLinha.length))
+    //console.log(parseInt(carrinhoProdutosLinha.length))
     var total = 0
-    var i = 0
-    while( i < parseInt(carrinhoProdutosLinha.length)) 
+    var preco = 0
+    for (var i = 0; i < carrinhoProdutosLinha.length; i++) 
     {
-        carrinhoProdutosContainer = document.getElementsByClassName('carinhoProdutos')[i]
-        
-        console.log("i = ")
         console.log(i)
-        console.log(parseInt(carrinhoProdutosLinha.length))
-        var carrinhoProdutosLinha = carrinhoProdutosLinha[i]
 
-        var precoElemento = carrinhoProdutosLinha.getElementsByClassName('precoCar')[i]
-        console.log(carrinhoProdutosLinha.getElementsByClassName('precoCar')[i])
-
-        var quantidadeElemento = carrinhoProdutosLinha.getElementsByClassName('carrinhoQuantidadeInp')[i]
-
-        var preço = parseFloat(precoElemento.innerHTML.replace('€', ''))
-
-        var quantidade = parseInt(quantidadeElemento.value)
-
-        total = total + (preço * quantidade)
-
-        i += 1
+        var linhaProduto =carrinhoProdutosLinha[i]
+        console.log(linhaProduto)
         
-        console.log("i = ")
-        console.log(i)
+        var quantidadeElemento = document.getElementsByClassName("carrinhoQuantidadeInp")[i]
+        console.log(quantidadeElemento)
+
+        var quantidade = quantidadeElemento.value
+        console.log(quantidade)
+
+        var preçoElemento = document.getElementsByClassName("precoCar")[i]
+        console.log(preçoElemento)
+
+        var preco = parseFloat(preçoElemento.innerText.replace('€', ''))
+        console.log(preco)
+
+        let totalProduto = quantidade * preco
+        console.log(totalProduto)
+
+        total = total + totalProduto
+        console.log(total)
+
+        console.log("")
     }
+    
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('valorTotal')[0].innerText = '€' + total
+    
 }
