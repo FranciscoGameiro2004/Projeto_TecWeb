@@ -24,6 +24,7 @@ function ready() {
     }
 
     var removerProduto = document.getElementsByClassName("btnRemover")
+    console.log(removerProduto)
     for (var i = 0; i < removerProduto.length;i++) 
     {
         var button = removerProduto[i]
@@ -97,7 +98,7 @@ function adicionarProdutoCarrinho(titulo,preco,imagemSrc){
 function removerProdutoCarrinho(event) {
     var botaoClicado = event.target
     botaoClicado.parentElement.parentElement.remove()
-    update()
+    //update()
 }
 function quantidadeAlterada(event) {
     var input = event.target
